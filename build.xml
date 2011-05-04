@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="jayray-common" basedir="." default="jar">
     <property name="src" value="src/main/java"/>
-    <property name="output" value="target"/>
+    <property name="output" value="target/"/>
 
     <target name="compile" depends="create">
         <javac destdir="${output}">            
@@ -11,7 +11,7 @@
     </target>
 
     <target name="jar" depends="compile">
-        <jar destfile="test.jar">
+        <jar destfile="${output}/jayray-commons.jar">
             <fileset dir="${output}"/>
         </jar>
     </target>
