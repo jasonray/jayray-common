@@ -1,10 +1,12 @@
-package net.jayray.common;
+package net.jayray.common.nullchecker;
 
 import static org.junit.Assert.*;	
 
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
+
+import net.jayray.common.nullchecker.NullChecker;
 
 import org.junit.Test;
 
