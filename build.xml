@@ -1,28 +1,31 @@
 <?xml version="1.0"?>
 <project name="jayray-common" basedir="." default="jar">
     <property name="src" value="src/main/java"/>
-    <property name="output" value="target/"/>
+    <property name="output-class" value="target/"/>
+    <property name="output-dist" value="dist"/>
 
     <target name="compile" depends="create">
-        <javac destdir="${output}">            
+        <javac destdir="${output-class}">            
             <src path="${src}"/>            
             <classpath refid="java"/>
         </javac>
     </target>
 
     <target name="jar" depends="compile">
-        <jar destfile="${output}/jayray-commons.jar">
-            <fileset dir="${output}"/>
+        <jar destfile="${output-dist}/jayray-commons.jar">
+            <fileset dir="${output-class}"/>
         </jar>
     </target>
 
 
     <target name="clean">
-        <delete dir="${output}"/>
+        <delete dir="${output-class}"/>
+        <delete dir="${output-dist}"/>
     </target>
 
     <target name="create" depends="clean">
-        <mkdir dir="${output}"/>
+        <mkdir dir="${output-class}"/>
+        <mkdir dir="${output-dist}"/>
     </target>
 
     <path id="java">
