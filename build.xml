@@ -11,7 +11,7 @@
         </javac>
     </target>
 
-    <target name="jar" depends="compile">
+    <target name="package.create" depends="compile">
         <jar destfile="${output-dist}/jayray-commons.jar">
             <fileset dir="${output-class}"/>
         </jar>
