@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="jayray-common" basedir="." default="jar">
+<project name="jayray-common" basedir="." default="package.create">
     <property name="src" value="src/main/java"/>
     <property name="output-class" value="target/"/>
     <property name="output-dist" value="dist"/>
@@ -16,7 +16,6 @@
             <fileset dir="${output-class}"/>
         </jar>
     </target>
-
 
     <target name="clean">
         <delete dir="${output-class}"/>
