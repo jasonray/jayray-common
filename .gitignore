@@ -5,5 +5,10 @@
 target
 bin
 dist
+build
 
+#gradle output
 .gradle/
+
+#eclipse files
+.classpath
