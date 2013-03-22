@@ -1,14 +1,11 @@
 package jayray.net.common.nullchecker;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
 import java.util.List;
 
-import jayray.net.common.nullchecker.NullChecker;
-
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class NullCheckerStringTest {
     @Test
