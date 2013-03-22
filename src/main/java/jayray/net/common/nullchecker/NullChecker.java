@@ -58,6 +58,14 @@ public class NullChecker {
         return (!isNullish(value));
     }
 
+    public static boolean isNullish(Date value) {
+        return (value == null);
+    }
+
+    public static boolean isNotNullish(Date value) {
+        return (!isNullish(value));
+    }
+
     public static boolean isNullish(Collection<?> value) {
         boolean result = false;
         if ((value == null) || (value.size() == 0)) {
@@ -68,13 +76,5 @@ public class NullChecker {
 
     public static boolean isNotNullish(Collection<?> value) {
         return (!isNullish(value));
-    }
-
-    public static boolean isNotNullish(Date value) {
-        return (!isNullish(value));
-    }
-
-    public static boolean isNullish(Date value) {
-        return (value == null);
     }
 }
