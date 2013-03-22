@@ -1,4 +1,4 @@
-package net.jayray.common.nullchecker;
+package jayray.net.common.nullchecker;
 
 import java.util.Collection;
 import java.util.Date;
