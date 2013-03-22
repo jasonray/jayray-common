@@ -24,12 +24,24 @@ public class NullChecker {
     public static boolean isNullish(Integer value) {
         boolean result = false;
         if ((value == null) || value == 0) {
-            result= true;
+            result = true;
         }
         return result;
     }
 
     public static boolean isNotNullish(Integer value) {
+        return (!isNullish(value));
+    }
+
+    public static boolean isNullish(Double value) {
+        boolean result = false;
+        if ((value == null) || value == 0) {
+            result = true;
+        }
+        return result;
+    }
+
+    public static boolean isNotNullish(Double value) {
         return (!isNullish(value));
     }
 
