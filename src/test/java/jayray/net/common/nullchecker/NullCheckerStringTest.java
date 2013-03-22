@@ -10,7 +10,7 @@ import jayray.net.common.nullchecker.NullChecker;
 
 import org.junit.Test;
 
-public class NullCheckerTest {
+public class NullCheckerStringTest {
     @Test
     public void checkIsNullOnNullString() {
         String value = null;
@@ -69,30 +69,6 @@ public class NullCheckerTest {
     public void checkIsNotNullOnPopulatedString() {
         String value = "x";
         assertEquals(true, NullChecker.isNotNullish(value));
-    }
-
-    @Test
-    public void checkIsNullOnPoplatedDate() {
-        GregorianCalendar value = new GregorianCalendar(2000, 1, 1);
-        assertEquals(false, NullChecker.isNullish(value));
-    }
-
-    @Test
-    public void checkIsNotNullOnPopulatedDate() {
-        GregorianCalendar value = new GregorianCalendar(2000, 1, 1);
-        assertEquals(true, NullChecker.isNotNullish(value));
-    }
-
-    @Test
-    public void checkIsNullOnNullDate() {
-        GregorianCalendar value = null;
-        assertEquals(true, NullChecker.isNullish(value));
-    }
-
-    @Test
-    public void checkIsNotNullOnNullDate() {
-        GregorianCalendar value = null;
-        assertEquals(false, NullChecker.isNotNullish(value));
     }
 
     @Test
