@@ -15,7 +15,7 @@ gradle eclipse
 
 If you do not have gradle installed, run the gradle wrapper:
 ```
-./g eclipse
+./gradlew eclipse
 ```
 
 Now you can import the project into eclipse.
